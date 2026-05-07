@@ -6,48 +6,44 @@
 <title>CyberRoadMap — Roadmap</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,wght@0,300;0,600;0,900;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/roadmap.css">
+<style>@keyframes spin{to{transform:rotate(360deg)}}</style>
 </head>
 <body>
 <nav>
   <a class="logo" href="index.html">Cyber<span>Roadmap</span></a>
   <div class="navs">
-    <a class="ntab"     href="index.html">Home</a>
-    <a class="ntab on"  href="roadmap.html">Roadmap</a>
-    <a class="ntab"     href="lp.html">Learning Path</a>
-    <a class="ntab"     href="fw.html">Frameworks</a>
-    <a class="ntab"     href="res.html">Tempat Belajar</a>
-    <a class="ntab"     href="cert.html">Sertifikasi</a>
-    <a class="ntab"     href="career.html">Karier</a>
-    <a class="ntab"     href="assess.html">Mulai Dari Mana?</a>
-    <a class="ntab"     href="disclaimer.html">Disclaimer</a>
+    <a class="ntab"    href="index.html">Home</a>
+    <a class="ntab on" href="roadmap.html">Roadmap</a>
+    <a class="ntab"    href="lp.html">Learning Path</a>
+    <a class="ntab"    href="fw.html">Frameworks</a>
+    <a class="ntab"    href="res.html">Tempat Belajar</a>
+    <a class="ntab"    href="cert.html">Sertifikasi</a>
+    <a class="ntab"    href="career.html">Karier</a>
+    <a class="ntab"    href="assess.html">Mulai Dari Mana?</a>
+    <a class="ntab"    href="disclaimer.html">Disclaimer</a>
   </div>
   <div class="nav-levels">
-    <span class="nl" style="border-color:var(--L1);color:var(--L1)">Dasar</span>
-    <span class="nl" style="border-color:var(--L2);color:var(--L2)">Menengah</span>
-    <span class="nl" style="border-color:var(--L3);color:var(--L3)">Tinggi</span>
-    <span class="nl" style="border-color:var(--L4);color:var(--L4)">Ahli</span>
+    <span class="nl" style="border-color:var(--L1);color:var(--L1)" title="Dasar">Dasar</span>
+    <span class="nl" style="border-color:var(--L2);color:var(--L2)" title="Menengah">Menengah</span>
+    <span class="nl" style="border-color:var(--L3);color:var(--L3)" title="Tinggi">Tinggi</span>
+    <span class="nl" style="border-color:var(--L4);color:var(--L4)" title="Ahli / Spesialis">Ahli</span>
   </div>
 </nav>
 
-<div class="wrap">
-  <div class="sh">
-    <div class="sl">Roadmap · 10 Fase</div>
-    <div class="st">Cybersecurity Roadmap</div>
-    <div class="ss">Peta belajar komprehensif dari nol hingga profesional. Setiap fase memiliki materi terstruktur dan gerbang kompetensi yang terukur.</div>
+<div class="roadmap-shell">
+  <div class="roadmap-wrap">
+    <div class="sh">
+      <div class="sl">Roadmap · 10 Fase</div>
+      <div class="st">Cybersecurity Roadmap</div>
+      <div class="ss">Peta belajar komprehensif dari nol hingga profesional. Klik untuk menjelajahi level, fase, modul, materi, dan sumber belajar.</div>
+    </div>
+    <div class="rm-breadcrumb" id="roadmapBreadcrumb"></div>
+    <div class="rm-board">
+      <div class="rm-explorer" id="roadmapExplorer"></div>
+      <aside class="rm-detail" id="roadmapDetail"></aside>
+    </div>
   </div>
-  <div class="legend-bar">
-    <span>Level:</span>
-    <span class="lb-item" style="border-color:var(--L1);color:var(--L1)">Dasar</span>
-    <span class="lb-item" style="border-color:var(--L2);color:var(--L2)">Menengah</span>
-    <span class="lb-item" style="border-color:var(--L3);color:var(--L3)">Tinggi</span>
-    <span class="lb-item" style="border-color:var(--L4);color:var(--L4)">Ahli / Spesialis</span>
-    <span style="margin-left:8px">Prioritas:</span>
-    <span class="lb-item must">Must</span>
-    <span class="lb-item should">Should</span>
-    <span class="lb-item nice">Nice to Have</span>
-  </div>
-  <div class="phase-nav" id="phaseNav"></div>
-  <div id="phaseContent"></div>
 </div>
 
 <script src="js/supabase.js"></script>
