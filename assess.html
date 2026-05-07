@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberRoadMap — Mulai Dari Mana?</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,wght@0,300;0,600;0,900;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">Cyber<span>Roadmap</span></a>
+  <div class="navs">
+    <a class="ntab"     href="index.html">Home</a>
+    <a class="ntab"     href="roadmap.html">Roadmap</a>
+    <a class="ntab"     href="lp.html">Learning Path</a>
+    <a class="ntab"     href="fw.html">Frameworks</a>
+    <a class="ntab"     href="res.html">Tempat Belajar</a>
+    <a class="ntab"     href="cert.html">Sertifikasi</a>
+    <a class="ntab"     href="career.html">Karier</a>
+    <a class="ntab on"  href="assess.html">Mulai Dari Mana?</a>
+    <a class="ntab"     href="disclaimer.html">Disclaimer</a>
+  </div>
+  <div class="nav-levels">
+    <span class="nl" style="border-color:var(--L1);color:var(--L1)">Dasar</span>
+    <span class="nl" style="border-color:var(--L2);color:var(--L2)">Menengah</span>
+    <span class="nl" style="border-color:var(--L3);color:var(--L3)">Tinggi</span>
+    <span class="nl" style="border-color:var(--L4);color:var(--L4)">Ahli</span>
+  </div>
+</nav>
+
+<div class="assess-wrap">
+  <div class="sh">
+    <div class="sl">Assessment Pribadi</div>
+    <div class="st">Mulai Dari Mana?</div>
+    <div class="ss">Jawab jujur. Sistem akan menentukan Learning Path personal yang paling efisien untukmu — termasuk fase mana yang bisa kamu lewati dan mana yang wajib.</div>
+  </div>
+  <div class="prog-wrap">
+    <div class="prog-track"><div class="prog-fill" id="pFill" style="width:8%"></div></div>
+    <div class="prog-info">
+      <span id="pLabel">Pertanyaan 1 dari 12</span>
+      <span id="pPct">8%</span>
+    </div>
+  </div>
+  <div id="qArea"></div>
+  <div id="rArea" style="display:none"></div>
+</div>
+
+<script src="js/supabase.js"></script>
+<script src="js/assess.js"></script>
+</body>
+</html>
